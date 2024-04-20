@@ -104,6 +104,8 @@ section.title{
 
 .title__profile{
     float: right;
+    width: 368px;
+    height: 368px;
 }
 
 .title__container{
@@ -221,7 +223,11 @@ section.hobbies{
 
 section.academic{
     background-color: #EAF2FD;
-    padding: 32px 123px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .academic__title{
@@ -244,6 +250,9 @@ section.academic{
     width: 368px;
     height: 347px;
 }
+.academic__courses__item__img img{
+    width: 192px;
+}
 
 .academic__courses__item__title{
     font-weight: 700;
@@ -261,7 +270,7 @@ section.academic{
 /* experiencia*/
 
 section.experience{
-
+    justify-content: center;
 }
 .experience__section__title {
     text-align: center;
@@ -270,23 +279,160 @@ section.experience{
 }
 .experiencie__box{
     display: flex;
+    padding: 40px;
+    justify-content: center;
+    gap: 16px;
 }
-.experience .experiencie__box:nth-child(2),
-.experience .experiencie__box:nth-child(4) {
+.experience__img{
+    width: 752px;
+    height: 406px;
+}
+
+.experience .experiencie__box:nth-child(2){
   display: flex;
   flex-direction: row-reverse;
 }
 
+
+.experiencie__box .experience__info-container{
+    width: 368px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: flex-start;
+}
+
+.experience__info-container .experience__title{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.experience__text{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.experience__description{
+    gap: 16px;
+}
+.experience__description .experience__repo .experiencia__botao--repo{
+    padding: 16px;
+    background-color: transparent;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+}
+.experience__description .experience__demo .experience__botao--demo{
+    padding: 16px;
+    background-color: #2A7AE4;
+    border: 1px solid #2A7AE4;
+    color: #FFFF;
+}
 /*Contacto*/
 
 section.formcontato{
+    background-color: #EAF2FD;
+    padding: 64px;
+    height: 596px;
+    display: flex;
+    justify-content: center;
+    
+}
+.formcontato__form{
+    gap: 32px;
+}
+.formcontato__subtext{
+    font-size: 16px;
+    font-weight: 500;
+    gap: 8px;
+    margin: 0;
+}
+.formcontato__subtext:nth-child(3){
+    margin-bottom: 32px;
+}
 
+.formcontato__contacto{
+    gap: 10px;
+    padding: 64px, 0px, 0px, 0px;
+}
+.formcontato__contacto{
+    display: flex;
+}
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+}
+.formcontato__text .formcontato__title{
+    font-size: 32px;
+    margin-top: 0px;
+}
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+}
+.formcontato__form label{
+    display: block;
+    width: 400px;
+    background: #FFFF;
+    border-radius: 4px;
+    padding: 10px 12px;
+    height: 40px;
+    width: 656px;
+}
+.formcontato__form label:last-of-type{
+    height: 133px;
+}
+.formcontato__form label span{
+    font-size: 12px;
+    color: #A2A2A2;
+}
+
+.formcontato__input, .formcontato__textarea{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 12px;
+    display: block;
+    width: 90%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+}
+.formcontato__textarea{
+    height: 133px;
+}
+
+.formcontato__input {
+    border-bottom: 1px solid #ccc; /* Color de borde por defecto */
+    transition: border-color 0.3s; /* Transición suave para el cambio de color de borde */
+}
+
+.formcontato__input:focus {
+    border-bottom-color: #2A7AE4; /* Cambia el color del borde al enfocar el input */
+}
+
+.formcontato__input:focus + span {
+    border-bottom-color: #2A7AE4;
+    color: #2A7AE4; /* Cambia el color del texto del label al enfocar el input */
+}
+
+.formcontato__form .formcontato__botao{
+    padding: 16px;
+    width: 144px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #2A7AE4;
+    font-size: 16px;
 }
 
 /*footeer*/
 
 section.footer{
-   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+   align-items: center;
+   font-size: 16px;
+   padding: 32px;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
