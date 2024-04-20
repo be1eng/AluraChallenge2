@@ -678,7 +678,7 @@ section.experience{
 
 }
 /*Mobile*/
-@media (min-width: 460px) {
+@media (max-width: 460px) {
     /* Menú */
     
     section.menu {
